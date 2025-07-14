@@ -10,6 +10,7 @@ app.use("/test", (req, res) => {
   res.json({ message: "Hello from the server!" });
 });
 app.use('/', router);
+console.log("hey")
 
 mongoose.connect('mongodb+srv://abhivishwkarmaa52:IgbGH8u3MRps1eSb@tasksubmission.kcszkls.mongodb.net/?retryWrites=true&w=majority&appName=tasksubmission')
   .then(() => app.listen(5000, () => console.log('Server running on port 5000')))
